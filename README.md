@@ -1,9 +1,9 @@
 
 ```
 your_project/
-├── config.py          ← updated
-├── driver_setup.py    ← unchanged, reuse the old one
-├── scraper_core.py    ← updated
-├── main.py            ← updated
-└── drug_lookup.py     ← new
+├── config.py          
+├── driver_setup.py    
+├── scraper_core.py    
+├── main.py            
+└── drug_lookup.py     
 ```
