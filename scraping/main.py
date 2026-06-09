@@ -4,7 +4,7 @@ from datetime import datetime, timezone
 
 import config
 from driver_setup import build_driver
-from scraper import collect_post_links, extract_comments_from_post
+from test import collect_post_links, extract_comments_from_post
 
 
 def run():
