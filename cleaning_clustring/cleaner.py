@@ -2,7 +2,7 @@ import pandas as pd
 import re
 
 
-df = pd.read_csv("../scraping/comments.csv")
+df = pd.read_csv("../scraping/merged_raw.csv")
 
 def clean_text(text):
     text = text.lower()                          # tout en minuscules
@@ -15,6 +15,6 @@ def clean_text(text):
 df['clean_text'] = df['text'].apply(clean_text)
 df = df[df['clean_text'].str.len() > 20]         # supprimer les textes vides
 
-df = df[["chemical_name", "drug_class", "brand_names", "clean_text"]]
+df = df[["chemical_name", "brand_names", "clean_text"]]
 
 df.to_csv('clean_comments.csv', index=False)     #creer le nouveau .csv exploitable
